@@ -29,10 +29,14 @@ h1{
     font-size: 48px;
 }
 
+main{
+    overflow: hidden;
+}
+
 /* Reusable Code */
 
 .container{
-    padding: 80px 0;
+    padding: 96px 0;
 }
 
 .row{
@@ -64,11 +68,40 @@ h1{
     color: #6415FF;
 }
 
+.subheading{
+    font-size: 16px;
+    font-weight: 700;
+    color: #6415FF;
+    letter-spacing: 1.6;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.blob__element--small{
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    z-index: -10;
+}
+
+.section__title{
+    font-weight: 900;
+    margin-top: 24px;
+}
+
+.section__para{
+    color: #7C8BA1;
+    font-size: 18px;
+    margin-top: 24px;
+    font-weight: 500;
+}
+
 /* Navbar */
 
 #landing{
-    padding: 32px;
+    padding: 32px 0;
     height: 100vh;
+    position: relative;
 }
 
 nav{
@@ -126,19 +159,11 @@ nav{
 
 /* Header */
 
-/* .header__container{
-    position: relative;
-}
-
 .header__blob{
-    position: absolute;
-    width: 16rem;
-    height: 16rem;
-    z-index: -10;
-    left: 0;
-    bottom: 0;
+    left: -136px;
+    bottom: 24px;
     opacity: 0.05;
-} */
+}
 
 .header__row{
     display: flex;
@@ -216,6 +241,7 @@ nav{
     font-size: 12px;
     font-weight: 700;
     color: #A0AEC0;
+    text-transform: uppercase;
 }
 
 .customers__photo{
@@ -225,4 +251,70 @@ nav{
 
 .customers__photo--img{
     opacity: 0.5
+}
+
+/* Features */
+
+.features__content{
+    justify-content: center;
+    align-items: center;
+}
+
+.features__para{
+    max-width: 600px;
+    text-align: center;
+}
+
+.features__elements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.features__element{
+    display: flex;
+    flex: 1 0 30%;
+    margin: 0 16px;
+    padding: 32px 8px;
+}
+
+.features__icon{
+    border: 1px solid #e5e5e5;
+    border-radius: 50px;
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+}
+
+.features__icon--img{
+    width: 24px;
+}
+
+.element__content{
+    margin: 8px 0 0 16px;
+    align-items: start;
+}
+
+.content__title{
+    font-size: 24px;
+}
+
+.content__para{
+    color: #7C8BA1;
+    font-size: 16px;
+    margin-top: 16px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+#features{
+    position: relative;
+}
+
+.features__blob{
+    opacity: 0.25;
+    right: -96px;
+    bottom: 48px;
 }
