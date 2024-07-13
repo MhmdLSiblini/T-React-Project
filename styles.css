@@ -37,6 +37,7 @@ main{
 
 .container{
     padding: 96px 0;
+    margin: 0 40px;
 }
 
 .row{
@@ -80,8 +81,7 @@ main{
 
 .blob__element--small{
     position: absolute;
-    width: 16rem;
-    height: 16rem;
+    width: 256px;
     z-index: -10;
 }
 
@@ -101,6 +101,14 @@ main{
     font-size: 18px;
     margin-top: 24px;
     font-weight: 500;
+}
+
+.flex__row{
+    display: flex;
+}
+
+.content__side, .photo__side{
+    width: 50%;
 }
 
 /* Navbar */
@@ -333,19 +341,16 @@ nav{
 }
 
 .quality__content{
-    width: 50%;
     margin-right: 64px;
 }
 
 .quality_photo__container{
-    width: 50%;
     position: relative;
 }
 
 .quality__blob{
     right: -40px;
     bottom: -36px;
-    height: 80px;
     width: 80px;
 }
 
@@ -356,4 +361,57 @@ nav{
 
 .quality__button{
     margin-top: 32px;
+}
+
+/* Steps */
+
+.steps__blob{
+    width: 160px;
+    opacity: 0.15;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.steps_photo__container{
+    position: relative;
+}
+
+.steps{
+    margin-top: 12px;
+}
+
+.step{
+    margin-top: 32px;
+    display: flex;
+}
+
+.step__number{
+    font-size: 36px;
+    color: #CBD5E0;
+    font-weight: 600;
+}
+
+.steps__content{
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 320px;
+}
+
+.step__title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.step__details{
+    color: #718096;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.steps__container{
+    margin-left: 64px;
 }
