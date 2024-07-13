@@ -58,6 +58,7 @@ main{
     font-weight: 600;
     transition: background-color 300ms ease;
     cursor: pointer;
+    border: none;
 }
 
 .purple__button:hover{
@@ -82,6 +83,12 @@ main{
     width: 16rem;
     height: 16rem;
     z-index: -10;
+}
+
+.blob__element--dotted{
+    position: absolute;
+    z-index: -10;
+    fill: #6415FF;
 }
 
 .section__title{
@@ -173,6 +180,7 @@ nav{
     width: 40%;
     justify-content: center;
     gap: 48px;
+    margin-right: 64px;
 }
 
 .header__photo{
@@ -214,7 +222,6 @@ nav{
 }
 
 .header__email--button{
-    border: none;
     padding: 16px 32px;
     font-size: 16px;
     font-weight: 700;
@@ -317,4 +324,36 @@ nav{
     opacity: 0.25;
     right: -96px;
     bottom: 48px;
+}
+
+/* Quality Work */
+
+.quality__row{
+    display: flex;
+}
+
+.quality__content{
+    width: 50%;
+    margin-right: 64px;
+}
+
+.quality_photo__container{
+    width: 50%;
+    position: relative;
+}
+
+.quality__blob{
+    right: -40px;
+    bottom: -36px;
+    height: 80px;
+    width: 80px;
+}
+
+.quality__photo--img{
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.quality__button{
+    margin-top: 32px;
 }
