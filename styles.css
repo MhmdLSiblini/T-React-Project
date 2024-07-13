@@ -8,7 +8,6 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
-    letter-spacing: 0.5px;
     line-height: 1.25;
     color: #243E63;
 }
@@ -36,7 +35,7 @@ main{
 /* Reusable Code */
 
 .container{
-    padding: 96px 0;
+    padding: 112px 0;
     margin: 0 40px;
 }
 
@@ -56,10 +55,12 @@ main{
     background-color: #6415FF;
     border-radius: 40px;
     padding: 12px 32px;
-    font-weight: 600;
+    font-weight: 700;
     transition: background-color 300ms ease;
     cursor: pointer;
     border: none;
+    width: fit-content;
+    font-size: 14px;
 }
 
 .purple__button:hover{
@@ -101,6 +102,7 @@ main{
     font-size: 18px;
     margin-top: 24px;
     font-weight: 500;
+    line-height: 30px;
 }
 
 .flex__row{
@@ -123,6 +125,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 8px;
 }
 
 .logo{
@@ -165,6 +168,10 @@ nav{
     border-color: transparent;
     padding-bottom: 4px;
     transition: color 300ms ease, border-color 300ms ease;
+}
+
+.authentication__link--custom{
+    font-weight: 600;
 }
 
 .page__link:hover, .authentication__link:hover:not(.authentication__link--custom){
@@ -375,6 +382,7 @@ nav{
 
 .steps_photo__container{
     position: relative;
+    
 }
 
 .steps{
@@ -414,4 +422,71 @@ nav{
 
 .steps__container{
     margin-left: 64px;
+}
+
+/* Values */
+
+.content__side{
+    margin-right: 64px;
+    max-width: 576px;
+}
+
+.values{
+    display: flex;
+}
+
+.value{
+    margin: 32px 32px 0 0;
+    width: 50%;
+}
+
+.value:last-child{
+    margin: 32px 0 0 0;
+}
+
+.value__header{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.value_icon__container{
+    border-radius: 50px;
+    padding: 8px;
+    display: flex;
+}
+
+.affordable__icon__container{
+    background-color: #9AE6B4;
+}
+
+.professionalism__icon__container{
+    background-color: #FEB2B2;
+}
+
+.value__icon{
+    width: 20px;
+}
+
+.affordable__icon{
+    stroke: #276749;
+}
+
+.professionalism__icon{
+    stroke: #9B2C2C;
+}
+
+.value__title{
+    font-size: 20px;
+}
+
+.value__para{
+    margin-top: 16px;
+    line-height: 26px;
+    font-size: 16px;
+    color: #718096;
+}
+
+.values__button{
+    margin-top: 48px;
 }
