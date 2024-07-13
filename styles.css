@@ -609,6 +609,13 @@ nav{
     padding: 16px 56px;
     text-transform: uppercase;
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    transition: all 300ms ease;
+}
+
+.pricing__button:hover{
+    scale: 1.02;
+    filter: brightness(90%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .red__element{
@@ -637,4 +644,85 @@ nav{
     left: -16px;
     bottom: -192px;
     opacity: 0.25;
+}
+
+/* Testimonials */
+
+.testimonials__content{
+    margin-left: 64px;
+}
+
+/* FAQS */
+
+
+
+/* Start */
+
+.start__container{
+    position: relative;
+    background-color: #6415FF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    padding: 96px;
+    z-index: -11;
+    overflow: hidden;
+}
+
+.blob__start{
+    opacity: 0.4;
+    fill: #5011CC;
+    position: absolute;
+    width: 320px;
+    z-index: -10;
+}
+
+.blob_start__left{
+    left: -80px;
+    bottom: -136px;
+}
+
+.blob_start__right{
+    top: -260px;
+    right: -80px;
+}
+
+.start__title{
+    color: #F7FAFC;
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 480px;
+}
+
+.start__button{
+    color: #F7FAFC;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 24px 40px;
+    border-radius: 50px;
+    height: fit-content;
+}
+
+.get_started__button{
+    border: none;
+    background-color: #F56565;
+    margin-right: 32px;
+    transition: background-color 300ms ease;
+}
+
+.get_started__button:hover{
+    background-color: #E53E3E;
+}
+
+.contact_us__button{
+    background-color: transparent;
+    padding: 23px 39px;
+    border: 1px solid #F7FAFC;
+    transition: color 300ms ease, background-color 300ms ease;
+}
+
+.contact_us__button:hover{
+    color: #6415FF;
+    background-color: #F7FAFC;
 }
