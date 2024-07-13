@@ -490,3 +490,151 @@ nav{
 .values__button{
     margin-top: 48px;
 }
+
+/* Pricing */
+
+#pricing{
+    position: relative;
+}
+
+.pricing__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing__para{
+    max-width: 576px;
+}
+
+.pricing__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+}
+
+.pricing__item{
+    flex: 1 0 30%;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.pricing__item:not(:last-child){
+    margin-right: 32px;
+}
+
+.pricing_header__color{
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    height: 8px;
+    width: 100%;
+}
+
+.pricing__data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing__details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 32px 40px;
+    
+}
+
+.pricing__type{
+    font-size: 20px;
+    color: #1A202C;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pricing__price{
+    font-size: 48px;
+    color: #1A202C;
+    font-weight: 700;
+}
+
+.pricing__duration{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #A0AEC0;
+    letter-spacing: 1.6;
+}
+
+.pricing__target{
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #e5e5e5;
+    width: 100%;
+}
+
+.target__group{
+    font-size: 20px;
+    color: #1A202C;
+    font-weight: 700;
+}
+
+.pricing__templates, .landing__pages, .internal__pages, .assistance__type{
+    color: #718096;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.pricing_button__container{
+    padding: 32px 40px;
+}
+
+.pricing__button{
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    color: #F7FAFC;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    padding: 16px 56px;
+    text-transform: uppercase;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.red__element{
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.purple__item{
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.purple__margin{
+    margin-top: 8px;
+}
+
+.white__text{
+    color: #EDF2F7;
+}
+
+.white__button{
+    background: none;
+    background-color: #EDF2F7;
+    color: #6415FF;
+}
+
+.pricing__blob{
+    left: -16px;
+    bottom: -192px;
+    opacity: 0.25;
+}
