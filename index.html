@@ -11,6 +11,7 @@
     <script src="javascript/slider.js" defer></script>
     <script src="javascript/accordion.js" defer></script>
     <script src="javascript/scroll.js" defer></script>
+    <script src="javascript/burgermenu.js" defer></script>
 </head>
 
 <body>
@@ -31,6 +32,42 @@
                     <ul class="authentication__links">
                         <li><a href="#" class="authentication__link">Login</a></li>
                         <li><a href="#" class="authentication__link--custom purple__button">Sign Up</a></li>
+                    </ul>
+                </div>
+
+                <button class="btn__menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="menu__backdrop">
+                    <div class="btn__menu x__mark btn__menu--close" onclick="closeMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </div>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a class="menu__link page__link" href="#" onclick="closeMenu()">About</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link page__link" href="#" onclick="closeMenu()">Blog</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link page__link" href="#" onclick="closeMenu()">Pricing</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link page__link" href="#" onclick="closeMenu()">Contact Us</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link page__link" href="#" onclick="closeMenu()">Login</a>
+                        </li>
+                        <button class="purple__button authentication__link--custom burger__menu--button">Sign Up</button>
                     </ul>
                 </div>
             </nav>
