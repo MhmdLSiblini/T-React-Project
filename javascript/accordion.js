@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const input = item.querySelector('input[type="radio"]');
         const content = item.querySelector('.accordion__item--content');
 
+
         const toggleAccordion = () => {
             if (input.checked) {
                 input.checked = false;
@@ -16,8 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 input.checked = true;
             }
         };
-
+        
         preview.addEventListener('click', toggleAccordion);
         content.addEventListener('click', toggleAccordion);
     });
 });
+
+// Why Label is not clickable when accordion item is open, it should close the accordion

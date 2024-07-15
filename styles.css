@@ -75,7 +75,7 @@ main{
     font-size: 16px;
     font-weight: 700;
     color: #6415FF;
-    letter-spacing: 1.6;
+    letter-spacing: 1.6px;
     line-height: 24px;
     text-transform: uppercase;
 }
@@ -95,6 +95,7 @@ main{
 .section__title{
     font-weight: 900;
     margin-top: 24px;
+    letter-spacing: 1.2px;
 }
 
 .section__para{
@@ -778,6 +779,24 @@ nav{
 
 /* FAQS */
 
+#FAQS{
+    position: relative;
+}
+
+.faqs__blob--right{
+    top: -72px;
+    right: -144px;
+    opacity: 0.15;
+    fill: #4FD1C5;
+}
+
+.faqs__blob--left{
+    bottom: 64px;
+    left: -144px;
+    opacity: 0.15;
+    fill: #6415FF;
+}
+
 .FAQS__row{
     justify-content: center;
     align-items: center;
@@ -841,7 +860,8 @@ input[type="radio"] {
 
 input[type="radio"]:checked + .accordion__preview + .accordion__item--content {
     max-height: 500px; 
-    padding: 16px 40px;
+    padding-top: 8px;
+    padding-bottom: 16px;
 }
 
 input[type="radio"]:checked + .accordion__preview .accordion__button {
