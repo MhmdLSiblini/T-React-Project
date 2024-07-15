@@ -113,6 +113,12 @@ main{
     width: 50%;
 }
 
+.photo__side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Navbar */
 
 #landing{
@@ -426,7 +432,7 @@ nav{
 
 /* Values */
 
-.content__side{
+.values__container{
     margin-right: 64px;
     max-width: 576px;
 }
@@ -650,6 +656,121 @@ nav{
 
 .testimonials__content{
     margin-left: 64px;
+    margin-right: 0;
+    width: 45%;
+}
+
+.testimonials__photo_side{
+    width: 65%;
+}
+
+/* Slider */
+
+.testimonial__container {
+    margin: 32px auto;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 336px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.testimonial {
+    transition: transform 1s;
+    min-width: 100%;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+}
+
+.star__rating {
+    fill: #F6AD55;
+    width: 20px;
+}
+
+.rating {
+    margin-bottom: 16px;
+}
+
+.testimonial__title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.testimonial__para {
+    margin: 16px 0 40px;
+    color: #4A5568;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.user__photo--img {
+    width: 80px;
+    border-radius: 50px;
+}
+
+.testimonial__user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user__side {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.user__data {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.user__name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.user__description {
+    color: #7C8BA1;
+    font-weight: 500;
+}
+
+.slider__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    width: 16px;
+}
+
+.arrow__left {
+    transform: rotate(180deg);
+}
+
+.arrow__button {
+    border: none;
+    padding: 16px;
+    border-radius: 50px;
+    display: flex;
+    background-color: #EDF2F7;
+    margin: 0 12px;
+    transition: filter 300ms ease;
+}
+
+.arrow__button:hover {
+    filter: brightness(95%);
+}
+
+.button__seperator {
+    width: 1px;
+    height: 24px;
+    background-color: #243e632d;
 }
 
 /* FAQS */
@@ -693,6 +814,7 @@ nav{
     font-size: 30px;
     font-weight: 700;
     max-width: 480px;
+    line-height: 45px;
 }
 
 .start__button{

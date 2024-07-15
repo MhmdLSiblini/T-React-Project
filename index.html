@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/Logo.svg?" type="image/svg+xml">
     <link rel="icon" href="assets/Logo.ico?" type="image/x-icon">
+    <script src="slider.js" defer></script>
 </head>
 
 <body>
@@ -260,7 +261,7 @@
         <section id="values">
             <div class="container">
                 <div class="row flex__row">
-                    <div class="content__side">
+                    <div class="content__side values__container">
                         <span class="subheading">Values</span>
                         <h1 class="section__title">
                             We Always Abide by Our <span class="purple">Principles.</span>
@@ -415,7 +416,7 @@
         <section id="testimonials">
             <div class="container">
                 <div class="row flex__row">
-                    <div class="photo__side">
+                    <div class="photo__side testimonials__photo_side">
                         <figure class="testimonials__photo">
                             <img src="assets/testimonials.svg" alt="" class="testimonials__photo--img">
                         </figure>
@@ -429,11 +430,227 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua enim ad minim veniam.
                         </p>
-                        <p class="section__para"><span class="purple"> Testimonial Slider will be added here :)</span>
-                        </p>
-                    </div>
+                        <div class="testimonial__container">
+                            <div class="testimonial">
+                                <div class="rating">
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span class="testimonial__title">Amazing User Experience</span>
+                                <p class="testimonial__para">Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                <div class="testimonial__user">
+                                    <div class="user__side">
+                                        <figure class="user__photo">
+                                            <img src="assets/Charlotte.avif" alt="" class="user__photo--img">
+                                        </figure>
+                                        <div class="user__data">
+                                            <span class="user__name">Charlotte Hale</span>
+                                            <span class="user__description">Director, Delos Inc.</span>
+                                        </div>
+                                    </div>
+                                    <div class="slider__buttons">
+                                        <button class="arrow__button button__left" onclick="goPrev()"><img
+                                                src="assets/arrow-right-solid.svg" alt=""
+                                                class="arrow arrow__left"></button>
+                                        <div class="button__seperator"></div>
+                                        <button class="arrow__button button__right" onclick="goNext()"><img
+                                                src="assets/arrow-right-solid.svg" alt="" class="arrow"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="rating">
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span class="testimonial__title">Love the Developer Experience and Design
+                                    Principles!</span>
+                                <p class="testimonial__para">Sinor Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                    non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam.</p>
+                                <div class="testimonial__user">
+                                    <div class="user__side">
+                                        <figure class="user__photo">
+                                            <img src="assets/Adam.avif" alt="" class="user__photo--img">
+                                        </figure>
+                                        <div class="user__data">
+                                            <span class="user__name">Adam Cuppy</span>
+                                            <span class="user__description">Founder, EventsNYC</span>
+                                        </div>
+                                    </div>
+                                    <div class="slider__buttons">
+                                        <button class="arrow__button button__left" onclick="goPrev()"><img
+                                                src="assets/arrow-right-solid.svg" alt=""
+                                                class="arrow arrow__left"></button>
+                                        <div class="button__seperator"></div>
+                                        <button class="arrow__button button__right" onclick="goNext()"><img
+                                                src="assets/arrow-right-solid.svg" alt="" class="arrow"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="rating">
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span class="testimonial__title">Always My Go To</span>
+                                <p class="testimonial__para">Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                <div class="testimonial__user">
+                                    <div class="user__side">
+                                        <figure class="user__photo">
+                                            <img src="assets/mrbeast.jpg" alt="" class="user__photo--img">
+                                        </figure>
+                                        <div class="user__data">
+                                            <span class="user__name">Jimmy Donaldson</span>
+                                            <span class="user__description">Owner, Mr. Beast</span>
+                                        </div>
+                                    </div>
+                                    <div class="slider__buttons">
+                                        <button class="arrow__button button__left" onclick="goPrev()"><img
+                                                src="assets/arrow-right-solid.svg" alt=""
+                                                class="arrow arrow__left"></button>
+                                        <div class="button__seperator"></div>
+                                        <button class="arrow__button button__right" onclick="goNext()"><img
+                                                src="assets/arrow-right-solid.svg" alt="" class="arrow"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="rating">
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 1792 1792" class="star__rating">
+                                        <path
+                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span class="testimonial__title">Our Brand Would Have Failed Without It</span>
+                                <p class="testimonial__para">Sinor Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                    non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam.</p>
+                                <div class="testimonial__user">
+                                    <div class="user__side">
+                                        <figure class="user__photo">
+                                            <img src="assets/david.jpg" alt="" class="user__photo--img">
+                                        </figure>
+                                        <div class="user__data">
+                                            <span class="user__name">David Martinez</span>
+                                            <span class="user__description">Founder, Cyberpunk</span>
+                                        </div>
+                                    </div>
+                                    <div class="slider__buttons">
+                                        <button class="arrow__button button__left" onclick="goPrev()"><img
+                                                src="assets/arrow-right-solid.svg" alt=""
+                                                class="arrow arrow__left"></button>
+                                        <div class="button__seperator"></div>
+                                        <button class="arrow__button button__right" onclick="goNext()"><img
+                                                src="assets/arrow-right-solid.svg" alt="" class="arrow"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
-            </div>
         </section>
 
         <section id="start">
@@ -530,7 +747,8 @@
             </a>
 
             <span class="footer__copyright white__text">
-                © 2024 - <a href="https://github.com/MhmdLSiblini" target="_blank" class="github__link">MhmdLSiblini</a> - All Rights Reserved.
+                © 2024 - <a href="https://github.com/MhmdLSiblini" target="_blank" class="github__link">MhmdLSiblini</a>
+                - All Rights Reserved.
             </span>
             <div class="footer__social_links">
                 <a href="https://facebook.com" target="_blank" class="footer__social_link--container"><svg
