@@ -35,7 +35,7 @@ main{
 /* Reusable Code */
 
 .container{
-    padding: 112px 0;
+    padding: 96px 0;
     margin: 0 40px;
 }
 
@@ -117,6 +117,18 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.max__width__para{
+    max-width: 576px;
+    text-align: center;
+}
+
+.faqs__accordion, .testimonial {
+    -webkit-user-select: none; 
+    -moz-user-select: none;   
+    -ms-user-select: none;     
+    user-select: none;         
 }
 
 /* Navbar */
@@ -286,11 +298,6 @@ nav{
 .features__content{
     justify-content: center;
     align-items: center;
-}
-
-.features__para{
-    max-width: 600px;
-    text-align: center;
 }
 
 .features__elements{
@@ -510,10 +517,6 @@ nav{
     justify-content: center;
 }
 
-.pricing__para{
-    max-width: 576px;
-}
-
 .pricing__list{
     display: flex;
     flex-wrap: wrap;
@@ -664,7 +667,7 @@ nav{
     width: 65%;
 }
 
-/* Slider */
+/* Testimonials -- Slider */
 
 .testimonial__container {
     margin: 32px auto;
@@ -775,9 +778,81 @@ nav{
 
 /* FAQS */
 
+.FAQS__row{
+    justify-content: center;
+    align-items: center;
+}
 
+/* FAQS -- Accordion */
+
+.faqs__accordion {
+    margin: 48px auto;
+    max-width: 896px;
+}
+
+.accordion__item {
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #EDF2F7;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+
+.accordion__item:hover{
+    background-color: #E2E8F0;
+}
+
+.accordion__preview {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 40px;
+}
+
+.accordion__button {
+    width: 24px;
+    transition: transform 0.3s;
+}
+
+.accordion__item--label {
+    font-size: 20px;
+    color: #243749;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.accordion__item--content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 40px;
+}
+
+.accordion__item--para {
+    line-height: 26px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .accordion__preview + .accordion__item--content {
+    max-height: 500px; 
+    padding: 16px 40px;
+}
+
+input[type="radio"]:checked + .accordion__preview .accordion__button {
+    transform: rotate(180deg);
+}
 
 /* Start */
+
+.start__container--main{
+    padding-top: 0px;
+}
 
 .start__container{
     position: relative;
