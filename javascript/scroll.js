@@ -11,19 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const displayScrollElement = (element) => {
         element.classList.add('visible');
-    };
-
-    const hideScrollElement = (element) => {
-        element.classList.remove('visible');
+        element.classList.add('animated');
     };
 
     const handleScrollAnimation = () => {
-        const elementsArray = Array.from(scrollElements);
-        elementsArray.reverse().forEach((el) => {
-            if (elementInView(el, 100)) {
+        scrollElements.forEach((el) => {
+            if (elementInView(el, 100) && !el.classList.contains('animated')) {
                 displayScrollElement(el);
-            } else {
-                hideScrollElement(el);
             }
         });
     };
