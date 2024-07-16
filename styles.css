@@ -1374,6 +1374,23 @@ footer{
 
 @media (max-width: 650px){
 
+    .features__element{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .features__icon{
+        justify-content: center;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .element__content{
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+
     .header__content{
         width: 90%;
     }
@@ -1418,6 +1435,10 @@ footer{
         font-size: 32px;
     }
 
+    .value{
+        width: 100%;
+    }
+
     .values{
         flex-direction: column;
         justify-content: center;
@@ -1434,6 +1455,39 @@ footer{
 
     .value{
         margin-right: 0;
+    }
+
+    .header__email--button{
+        padding: 20px 32px;
+        position: static;
+        width: 100%;
+    }
+
+    .header__email--input{
+        border: 2px solid #E2E8F0;
+        border-radius: 40px;
+        padding: 20px 8px 20px 32px;
+        width: 100%;
+        transition: border-color 300ms ease;
+    }
+
+    .header__email--input:hover {
+        border-color: #b4b4b4;
+    }
+    
+    .header__email--input:focus {
+        border-color: #6415FF;
+    }
+
+    .header__email{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        padding: 20px 8px;
+        border: none;
+        width: 100%;
     }
 
 }
