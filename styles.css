@@ -34,9 +34,9 @@ main{
 
 /* On Scroll */
 
-body{
+body, html {
     overflow-x: hidden;
-}
+  }  
 
 .scroll {
     transform: translateX(100%);
