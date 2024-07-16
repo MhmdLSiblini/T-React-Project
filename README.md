@@ -10,6 +10,7 @@ T-React Project is a demonstration of frontend development expertise, crafted fr
 - [Screenshots](#screenshots)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Conclusion And Credit](#conclusion-and-credit)
 
 ## Demo
 
@@ -35,6 +36,8 @@ T-React Project is a demonstration of frontend development expertise, crafted fr
 - **HTML**: Structured and semantic markup.
 - **CSS**: Advanced styling with flexbox, custom properties, and responsive design techniques.
 - **JavaScript**: Vanilla JavaScript for dynamic content and interactive features.
+
+## Conclusion and Credit
 
 This project was crafted to display proficiency in reproducing various web features and enhancing them with a clean and modern approach.
 
