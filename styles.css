@@ -236,7 +236,7 @@ nav{
     background-color: #FFFFFF;
     position: fixed;
     left: 0px;
-    right: 0;
+    right: -100%;
     top: 0px;
     z-index: 10;
     margin: 24px 16px;
@@ -246,12 +246,13 @@ nav{
     text-align: center;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
+    transition: opacity 0.3s, visibility 0.3s, right 0.3s;
 }
 
 .menu--open .menu__backdrop {
     opacity: 1;
     visibility: visible;
+    right: 0px;
 }
 
 .menu--open {
