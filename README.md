@@ -37,3 +37,7 @@ T-React Project is a demonstration of frontend development expertise, crafted fr
 - **JavaScript**: Vanilla JavaScript for dynamic content and interactive features.
 
 This project was crafted to display proficiency in reproducing various web features and enhancing them with a clean and modern approach.
+
+Many thanks to the owner of the original T-react Website [Owais](https://github.com/owaiswiz)
+
+[Link to Original Site For Comparison](https://treact.owaiskhan.me/components/landingPages/SaaSProductLandingPage)
